@@ -6,6 +6,11 @@ import { RiArrowLeftSLine } from "react-icons/ri";
 import { LuLayoutDashboard } from "react-icons/lu";
 import { CiCalendar } from "react-icons/ci";
 import { PiSignOut } from "react-icons/pi";
+import { GoBell } from "react-icons/go";
+import { BiBookReader } from "react-icons/bi";
+import { IoIosStarOutline } from "react-icons/io";
+import { GoGear } from "react-icons/go";
+import { BsTools } from "react-icons/bs";
 
 import Logo from "../assets/logo.png";
 
@@ -20,10 +25,10 @@ const navigationItems: NavigationItem[] = [
       { label: "Mobile Apps" },
     ],
   },
-  { icon: "🔔", label: "Notifications" },
-  { icon: "📖", label: "Resources" },
+  { icon: <GoBell />, label: "Notifications" },
+  { icon: <BiBookReader />, label: "Resources" },
   {
-    icon: "⭐",
+    icon: <IoIosStarOutline />,
     label: "Bookmarks",
     subItems: [
       { label: "Saved Tutorials" },
@@ -31,8 +36,8 @@ const navigationItems: NavigationItem[] = [
       { label: "Resource Guides" },
     ],
   },
-  { icon: "⚙️", label: "Extensions" },
-  { icon: "🛠️", label: "Settings" },
+  { icon: <GoGear />, label: "Extensions" },
+  { icon: <BsTools />, label: "Settings" },
 ];
 
 const Sidebar: React.FC = () => {
